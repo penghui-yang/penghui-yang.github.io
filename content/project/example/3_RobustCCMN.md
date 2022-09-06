@@ -1,0 +1,34 @@
+---
+title: Robustness of Loss Functions for Class-Conditional Multi-Label Noise
+# summary: An example of using the in-built project page.
+# tags:
+#   - Deep Learning
+date: '2022-03-12T00:00:00Z'
+
+# Optional external URL for project (replaces project detail page).
+# external_link: ''
+
+# image:
+#   caption: Photo by rawpixel on Unsplash
+#   focal_point: Smart
+
+# links:
+#   - icon: twitter
+#     icon_pack: fab
+#     name: Follow
+#     url: https://twitter.com/georgecushen
+url_code: ''
+url_pdf: ''
+url_slides: ''
+url_video: ''
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+# slides: example
+---
+
+- Disclose that the balanced hamming loss (BHL) and ranking loss (RL) are robust under CCMN
+- Show that by using symmetric surrogate losses, the BHL and RL minimization can be achieved efficiently with ordinary SGD optimizer only based on corrupted data without knowing the noise rates
