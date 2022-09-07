@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <title>Peng-Hui Yang</title>
+    <link>https://phyang.top/</link>
+      <atom:link href="https://phyang.top/index.xml" rel="self" type="application/rss+xml" />
+    <description>Peng-Hui Yang</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Academic</title>
-      <link>https://example.com/</link>
+      <url>https://phyang.top/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Peng-Hui Yang</title>
+      <link>https://phyang.top/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://example.com/talk/example-talk/</link>
+      <link>https://phyang.top/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/example-talk/</guid>
+      <guid>https://phyang.top/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,9 +34,9 @@
     
     <item>
       <title>Multi-Label Knowledge Distillation</title>
-      <link>https://example.com/project/example/4_mlkd/</link>
+      <link>https://phyang.top/project/example/4_mlkd/</link>
       <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/4_mlkd/</guid>
+      <guid>https://phyang.top/project/example/4_mlkd/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Introduce a new learning framework called multi-label knowledge distillation&lt;/li&gt;
 &lt;li&gt;Propose a novel method for this problem based on label dependencies and correlation matrix&lt;/li&gt;
@@ -46,9 +46,9 @@
     
     <item>
       <title>A New Method for Class-Conditional Multi-Label Noise</title>
-      <link>https://example.com/project/example/5_splitccmn/</link>
+      <link>https://phyang.top/project/example/5_splitccmn/</link>
       <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/5_splitccmn/</guid>
+      <guid>https://phyang.top/project/example/5_splitccmn/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Propose a novel method for learning with class-conditional multi-label noise&lt;/li&gt;
 &lt;/ul&gt;
@@ -57,9 +57,9 @@
     
     <item>
       <title>Robustness of Loss Functions for Class-Conditional Multi-Label Noise</title>
-      <link>https://example.com/project/example/3_robustccmn/</link>
+      <link>https://phyang.top/project/example/3_robustccmn/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/3_robustccmn/</guid>
+      <guid>https://phyang.top/project/example/3_robustccmn/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Disclose that the balanced hamming loss (BHL) and ranking loss (RL) are robust under CCMN&lt;/li&gt;
 &lt;li&gt;Show that by using symmetric surrogate losses, the BHL and RL minimization can be achieved efficiently with ordinary SGD optimizer only based on corrupted data without knowing the noise rates&lt;/li&gt;
@@ -69,9 +69,9 @@
     
     <item>
       <title>On the Robustness of Loss Functions for Learning with Class-Conditional Multi-Label Noise</title>
-      <link>https://example.com/publication/example/2_robustccmn/</link>
+      <link>https://phyang.top/publication/example/2_robustccmn/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/example/2_robustccmn/</guid>
+      <guid>https://phyang.top/publication/example/2_robustccmn/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -92,9 +92,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Robust AUC Maximization for Classification with Pairwise Confidence Comparisons</title>
-      <link>https://example.com/publication/example/1_pcauc/</link>
+      <link>https://phyang.top/publication/example/1_pcauc/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/example/1_pcauc/</guid>
+      <guid>https://phyang.top/publication/example/1_pcauc/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -115,9 +115,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Pairwise LDAM Loss for Long-Tailed Multi-Label Classification</title>
-      <link>https://example.com/project/example/2_ltrank/</link>
+      <link>https://phyang.top/project/example/2_ltrank/</link>
       <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/2_ltrank/</guid>
+      <guid>https://phyang.top/project/example/2_ltrank/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Generalize label-distribution-aware margin loss to ranking loss by minimizing a margin-based generalization bound&lt;/li&gt;
 &lt;/ul&gt;
@@ -126,9 +126,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Robust AUC Maximization for Classification with Pairwise Confidence Comparisons</title>
-      <link>https://example.com/project/example/1_pcauc/</link>
+      <link>https://phyang.top/project/example/1_pcauc/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/1_pcauc/</guid>
+      <guid>https://phyang.top/project/example/1_pcauc/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Propose a robust method called PC-AUC to solve pairwise comparison (Pcomp) classification problems by minimizing pairwise surrogate losses&lt;/li&gt;
 &lt;li&gt;Prove that there exists a linear dependence between the proposed loss and AUC&lt;/li&gt;
@@ -140,9 +140,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://example.com/post/getting-started/</link>
+      <link>https://phyang.top/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/getting-started/</guid>
+      <guid>https://phyang.top/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
@@ -218,9 +218,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Slides</title>
-      <link>https://example.com/slides/example/</link>
+      <link>https://phyang.top/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/slides/example/</guid>
+      <guid>https://phyang.top/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -342,28 +342,10 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>https://example.com/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://example.com/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>https://example.com/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://example.com/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title></title>
-      <link>https://example.com/admin/config.yml</link>
+      <link>https://phyang.top/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/admin/config.yml</guid>
+      <guid>https://phyang.top/admin/config.yml</guid>
       <description></description>
     </item>
     
