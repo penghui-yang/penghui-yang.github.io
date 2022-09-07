@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Academic</title>
-    <link>penghui-yang.github.io/project/</link>
-      <atom:link href="penghui-yang.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <title>Projects | Peng-Hui Yang</title>
+    <link>https://phyang.top/project/</link>
+      <atom:link href="https://phyang.top/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Sep 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/penghui-yang.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://phyang.top/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>penghui-yang.github.io/project/</link>
+      <link>https://phyang.top/project/</link>
     </image>
     
     <item>
       <title>Multi-Label Knowledge Distillation</title>
-      <link>penghui-yang.github.io/project/example/4_mlkd/</link>
+      <link>https://phyang.top/project/example/4_mlkd/</link>
       <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>penghui-yang.github.io/project/example/4_mlkd/</guid>
+      <guid>https://phyang.top/project/example/4_mlkd/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Introduce a new learning framework called multi-label knowledge distillation&lt;/li&gt;
 &lt;li&gt;Propose a novel method for this problem based on label dependencies and correlation matrix&lt;/li&gt;
@@ -26,9 +26,9 @@
     
     <item>
       <title>A New Method for Class-Conditional Multi-Label Noise</title>
-      <link>penghui-yang.github.io/project/example/5_splitccmn/</link>
+      <link>https://phyang.top/project/example/5_splitccmn/</link>
       <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>penghui-yang.github.io/project/example/5_splitccmn/</guid>
+      <guid>https://phyang.top/project/example/5_splitccmn/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Propose a novel method for learning with class-conditional multi-label noise&lt;/li&gt;
 &lt;/ul&gt;
@@ -37,9 +37,9 @@
     
     <item>
       <title>Robustness of Loss Functions for Class-Conditional Multi-Label Noise</title>
-      <link>penghui-yang.github.io/project/example/3_robustccmn/</link>
+      <link>https://phyang.top/project/example/3_robustccmn/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>penghui-yang.github.io/project/example/3_robustccmn/</guid>
+      <guid>https://phyang.top/project/example/3_robustccmn/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Disclose that the balanced hamming loss (BHL) and ranking loss (RL) are robust under CCMN&lt;/li&gt;
 &lt;li&gt;Show that by using symmetric surrogate losses, the BHL and RL minimization can be achieved efficiently with ordinary SGD optimizer only based on corrupted data without knowing the noise rates&lt;/li&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Pairwise LDAM Loss for Long-Tailed Multi-Label Classification</title>
-      <link>penghui-yang.github.io/project/example/2_ltrank/</link>
+      <link>https://phyang.top/project/example/2_ltrank/</link>
       <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>penghui-yang.github.io/project/example/2_ltrank/</guid>
+      <guid>https://phyang.top/project/example/2_ltrank/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Generalize label-distribution-aware margin loss to ranking loss by minimizing a margin-based generalization bound&lt;/li&gt;
 &lt;/ul&gt;
@@ -60,9 +60,9 @@
     
     <item>
       <title>Robust AUC Maximization for Classification with Pairwise Confidence Comparisons</title>
-      <link>penghui-yang.github.io/project/example/1_pcauc/</link>
+      <link>https://phyang.top/project/example/1_pcauc/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>penghui-yang.github.io/project/example/1_pcauc/</guid>
+      <guid>https://phyang.top/project/example/1_pcauc/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Propose a robust method called PC-AUC to solve pairwise comparison (Pcomp) classification problems by minimizing pairwise surrogate losses&lt;/li&gt;
 &lt;li&gt;Prove that there exists a linear dependence between the proposed loss and AUC&lt;/li&gt;
