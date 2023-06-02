@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Peng-Hui Yang</title>
+    <title>Penghui Yang</title>
     <link>https://phyang.top/</link>
       <atom:link href="https://phyang.top/index.xml" rel="self" type="application/rss+xml" />
-    <description>Peng-Hui Yang</description>
+    <description>Penghui Yang</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://phyang.top/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Peng-Hui Yang</title>
+      <url>https://phyang.top/media/icon_hu7dbe5d6fec5ea1c01e4ff312cbd258a8_108382_512x512_fill_lanczos_center_3.png</url>
+      <title>Penghui Yang</title>
       <link>https://phyang.top/</link>
     </image>
     
@@ -30,6 +30,22 @@
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Multi-Label Knowledge Distillation</title>
+      <link>https://phyang.top/publication/mlkd/</link>
+      <pubDate>Fri, 02 Jun 2023 12:44:24 +0800</pubDate>
+      <guid>https://phyang.top/publication/mlkd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Robustness of Loss Functions for Learning with Class-Conditional Multi-Label Noise</title>
+      <link>https://phyang.top/publication/robustccmn/</link>
+      <pubDate>Mon, 05 Sep 2022 12:49:34 +0800</pubDate>
+      <guid>https://phyang.top/publication/robustccmn/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -64,52 +80,6 @@
 &lt;li&gt;Disclose that the balanced hamming loss (BHL) and ranking loss (RL) are robust under CCMN&lt;/li&gt;
 &lt;li&gt;Show that by using symmetric surrogate losses, the BHL and RL minimization can be achieved efficiently with ordinary SGD optimizer only based on corrupted data without knowing the noise rates&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>On the Robustness of Loss Functions for Learning with Class-Conditional Multi-Label Noise</title>
-      <link>https://phyang.top/publication/example/2_robustccmn/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://phyang.top/publication/example/2_robustccmn/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Robust AUC Maximization for Classification with Pairwise Confidence Comparisons</title>
-      <link>https://phyang.top/publication/example/1_pcauc/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://phyang.top/publication/example/1_pcauc/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
@@ -338,24 +308,6 @@ $$&lt;/p&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>https://phyang.top/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://phyang.top/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>https://phyang.top/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://phyang.top/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     

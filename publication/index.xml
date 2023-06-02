@@ -1,61 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Peng-Hui Yang</title>
+    <title>Publications | Penghui Yang</title>
     <link>https://phyang.top/publication/</link>
       <atom:link href="https://phyang.top/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 02 Jun 2023 12:44:24 +0800</lastBuildDate>
     <image>
-      <url>https://phyang.top/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://phyang.top/media/icon_hu7dbe5d6fec5ea1c01e4ff312cbd258a8_108382_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://phyang.top/publication/</link>
     </image>
     
     <item>
-      <title>On the Robustness of Loss Functions for Learning with Class-Conditional Multi-Label Noise</title>
-      <link>https://phyang.top/publication/example/2_robustccmn/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://phyang.top/publication/example/2_robustccmn/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
-</description>
+      <title>Multi-Label Knowledge Distillation</title>
+      <link>https://phyang.top/publication/mlkd/</link>
+      <pubDate>Fri, 02 Jun 2023 12:44:24 +0800</pubDate>
+      <guid>https://phyang.top/publication/mlkd/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Robust AUC Maximization for Classification with Pairwise Confidence Comparisons</title>
-      <link>https://phyang.top/publication/example/1_pcauc/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://phyang.top/publication/example/1_pcauc/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
-</description>
+      <title>On the Robustness of Loss Functions for Learning with Class-Conditional Multi-Label Noise</title>
+      <link>https://phyang.top/publication/robustccmn/</link>
+      <pubDate>Mon, 05 Sep 2022 12:49:34 +0800</pubDate>
+      <guid>https://phyang.top/publication/robustccmn/</guid>
+      <description></description>
     </item>
     
   </channel>
