@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Penghui Yang</title>
-    <link>https://phyang.top/publication/</link>
-      <atom:link href="https://phyang.top/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>1 | Penghui Yang</title>
+    <link>https://phyang.top/publication-type/1/</link>
+      <atom:link href="https://phyang.top/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 02 Jun 2023 12:44:24 +0800</lastBuildDate>
     <image>
       <url>https://phyang.top/media/icon_hu7dbe5d6fec5ea1c01e4ff312cbd258a8_108382_512x512_fill_lanczos_center_3.png</url>
-      <title>Publications</title>
-      <link>https://phyang.top/publication/</link>
+      <title>1</title>
+      <link>https://phyang.top/publication-type/1/</link>
     </image>
     
     <item>
