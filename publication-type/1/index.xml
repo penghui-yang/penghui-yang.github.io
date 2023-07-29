@@ -17,7 +17,10 @@
       <link>https://phyang.top/publication/mlkd/</link>
       <pubDate>Fri, 02 Jun 2023 12:44:24 +0800</pubDate>
       <guid>https://phyang.top/publication/mlkd/</guid>
-      <description></description>
+      <description>&lt;p&gt;Existing knowledge distillation methods typically work by imparting the knowledge of output logits or intermediate feature maps from the teacher network to the student network, which is very successful in multi-class single-label learning. However, these methods can hardly be extended to the multi-label learning scenario, where each instance is associated with multiple semantic labels, because the prediction probabilities do not sum to one and feature maps of the whole example may ignore minor classes in such a scenario.&lt;/p&gt;
+&lt;p&gt;In this paper, we propose a novel multi-label knowledge distillation method. On one hand, it exploits the informative semantic knowledge from the logits by dividing the multi-label learning problem into a set of binary classification problems; on the other hand, it enhances the distinctiveness of the learned feature representations by leveraging the structural information of label-wise embeddings.&lt;/p&gt;
+&lt;p&gt;Experimental results on multiple benchmark datasets validate that the proposed method can avoid knowledge counteraction among labels, thus achieving superior performance against diverse comparing methods. Our code is available at: &lt;a href=&#34;https://github.com/penghui-yang/L2D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/penghui-yang/L2D&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
