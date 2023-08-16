@@ -30,60 +30,12 @@
     <lastmod>2023-06-02T12:44:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://phyang.top/project/example/4_mlkd/</loc>
+    <loc>https://phyang.top/project/example/mlkd/</loc>
     <lastmod>2022-09-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://phyang.top/project/</loc>
     <lastmod>2022-09-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/project/example/5_splitccmn/</loc>
-    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/project/example/3_robustccmn/</loc>
-    <lastmod>2022-03-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/project/example/2_ltrank/</loc>
-    <lastmod>2021-12-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/project/example/1_pcauc/</loc>
-    <lastmod>2021-09-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/tag/academic/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/categories/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/category/demo/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/post/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/tags/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/post/getting-started/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/tag/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://phyang.top/category/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://phyang.top/slides/</loc>
@@ -95,6 +47,12 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://phyang.top/admin/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://phyang.top/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://phyang.top/tags/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
