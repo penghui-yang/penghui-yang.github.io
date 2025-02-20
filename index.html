@@ -1,83 +1,630 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Penghui Yang (NTU)</title>
-    <base href="https://penghui-yang.github.io/index.html">
+    <title>Penghui Yang</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Penghui Yang is a PhD student at NTU.">
+    <meta name="keywords" content="Penghui Yang,Natural Language Processing,Machine Learning,Knowledge Distillation,Speculative Decoding">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+/* Color Scheme: Orange / Yellow */
+:root {
+    --background-color: #fefbf5;
+    --highlight-color: #b6274e;
+    --main-color: #684e43;
+    --link-color: #86985c;
+    --link-color-hover: #8e6e29;
+    --secondary-link-color: #6d8436;
+    --secondary-link-border-color: #a5af97;
+    --secondary-content-background-color: #fffefc;
+    --link-button-background-color: #fffdfa;
+    /* a8826c 324d67 */
+}
+/* Color Scheme: Blue / Summer */
+:root {
+    /* --background-color: #f5fbfe; */
+    --background-color: #f5fbf7;
+    --highlight-color: #b6274e;
+    --main-color: #225573;
+    --link-color: #547b5b;
+    --link-color-hover: #292c1f;
+    --secondary-link-color: #6d8436;
+    --secondary-link-border-color: #7d99b1;
+    --secondary-content-background-color: #feffff;
+    --link-button-background-color: #fafdff;
+    /* a8826c 324d67 */
+}
+
+body{margin:0;padding:0;}
+a{color:var(--link-color)}
+a:hover{color:var(--link-color-hover);cursor:pointer}
+#background{position:fixed;top:0;overflow:hidden;height:0}
+#wave-canvas{display:block;position:relative;top:0;left:5%;width:55%;min-width:850px;height:150px;border:0}
+/*#main{z-index:2;margin:0 auto;position:absolute;padding-top:5%;width:100%;min-width:240px;text-align:center;background-color:rgb(254,250,246)}*/
+#main{margin:0 auto 15px;padding:45px 30px 15px;width:100%;min-width:240px;text-align:center;background-color:var(--background-color)}
+.highlight{color:var(--highlight-color);font-weight:600}
+.highlight:hover{color:var(--highlight-color);font-weight:600}
+
+.profile-pendant {display:none;bottom:-15px;right:-200px;position:absolute}
+@media (min-width: 768px) { .profile-pendant {display:block} }
+@media (max-width: 767px) { .profile-pendant {display:none} }
+
+.main-content{padding:0;text-align:center;cursor:default;text-align:center;}
+/*.main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}*/
+/*.main-content{margin-left:6.5104167%;width:86.9791667%;}*/
+@media (min-width: 768px) {.main-content{width:66%;min-width:668px;margin:auto;}}
+@media (min-width: 1200px) {.main-content{width:66%;max-width:1080px;margin:auto;}}
+
+/* Avatar, Name, etc. */
+#main-content-container{margin:0 auto;padding:15px 0 0;max-width:1080px;}
+@media (min-width: 768px) { #main-content-container{padding:15px 0 0;} }
+#main-content-container .col-avatar{text-align:center;min-width:220px;}
+@media (min-width: 768px) { #main-content-container .col-avatar{text-align:center} }
+#main-content-container .col-avatar .avatar{z-index:100;width:200px;height:200px;border-radius:100%;box-shadow:0 0 0 0.3em #eee;opacity:1;}
+@media (min-width: 1200px) { #main-content-container .col-avatar .avatar{margin-bottom:-50px} }
+
+#main-content-container .col-info{height:100%;align-items:center;}
+#main-info-container{padding-top:15px}
+#main-info-container .col-name{text-align:center;margin-top:30px}
+@media (min-width: 768px) { #main-info-container .col-name{text-align:left;margin-top:0;}
+}
+#main-info-container .col-name .text{text-align:left;margin-bottom:0.5rem;}
+#main-info-container .col-name .name{margin:0;color:var(--main-color);font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
+#main-info-container .col-name .email{color:#666; font-size:14px}
+#main-info-container .col-link{text-align:center;margin:-5px 0 -25px;}
+#main-info-container .col-link ul {margin:0px auto auto;padding:0;list-style:none;text-align:center}
+#main-info-container .col-link li {display:inline-block;margin:auto;padding:0 10px;color:#ccc;line-height:10px}
+#main-info-container .col-link li a{width:45px;height:45px;color:#ccc;padding:0;font-size:45px;line-height:45px}
+#main-info-container .col-link li a:focus,
+#main-info-container .col-link li a:hover{text-decoration:none;cursor:hand}
+#main-info-container .col-link li a.border{border:1px solid #ccc;border-radius:100%;}
+#main-info-container .col-link li a.padding{padding:0px 0px;font-size:22px}
+
+/* Other */
+.content-container{width:100%;padding:0 30px}
+.main-news-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+@media (min-width: 1200px) { .main-news-container{padding-top:20px;} }
+.main-news-container .subtitle{margin-top:0px;color:var(--main-color)}
+.main-news-container .news-list{margin-bottom:0rem}
+
+#news-more{margin-top:0rem}
+#news-more-button{margin-left:40px;margin-top:0.5rem;}
+
+section.overview ul,section.overview li,section.overview h3,section.overview h1,section.overview p{margin:0;padding:0}
+section.overview h1{font-weight:700}
+section.overview li{font-weight:400;list-style:none}
+.join,.up::after,.down::before{background-position:50% 50%}
+.up::after,.down::before{background-repeat:no-repeat;content:"";display:block;height:20px}
+.up::after{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA3IDQiPjxwYXRoIGZpbGw9IiM1NjZjN2YiIGQ9Ik0xIDRWM2gxVjJoM3YxaDF2MWgxVjJINlYxSDVWMEgydjFIMXYxSDB2MiIvPjwvc3ZnPg==)}
+.down::before{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI3cHgiIGhlaWdodD0iNHB4IiB2aWV3Qm94PSIwIDAgNyA0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3IDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiM1NjZjN2YiIHBvaW50cz0iNiwwIDYsMSA1LDEgNSwyIDIsMiAyLDEgMSwxIDEsMCAwLDAgMCwyIDEsMiAxLDMgMiwzIDIsNCA1LDQgNSwzIDYsMyA2LDIgNywyIDcsMCAiLz48L3N2Zz4=)}
+.join{background-repeat:repeat-y;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxcHgiIGhlaWdodD0iMXB4IiB2aWV3Qm94PSIwIDAgMSAxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxIDEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM1NjZjN2YiIGQ9Ik0wLDBoMXYxSDBWMHoiLz48L3N2Zz4=)}
+.thin,.thick{background:#ffffff}
+.thin{border:1px solid var(--secondary-link-border-color);padding:.5em}
+.main{text-align:center}
+.main ul{display:block;width:150px;margin:1em auto 0}
+ul.row{width:100%;display:flex;align-items:flex-start}
+ul.row li.page{flex:1;margin:0 .5em;min-width:280px}
+ul.row li.page.stretch{align-self:stretch}
+ul.row li.page:first-child{margin-left:0}
+ul.row li.page:last-child{margin-right:0}
+ul.row li.page h3 + ul.content{margin-top:1.5em}
+ul.row li.page ul.content li{border-top:1px solid var(--secondary-link-border-color);padding:2px 5px}
+ul.row li.page ul.content li.level-2{padding:2px 12px}
+ul.row li.page ul.content li ul.section li{border-top:none;padding:0}
+ul.row li.page ul.content li ul.section li:before{content:"― "}
+section.overview{background:var(--secondary-content-background-color);transition:max-width 400ms ease-in-out;padding:20px;margin:auto;z-index:99}
+section.overview .thin h3{will-change:auto;transition:transform 400ms ease-in-out;transform-origin:0 50%}
+section.overview .thin b{display:block;padding:2px 5px}
+section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
+@media (max-width: 1480px) { ul.row li.page{margin:0} }
+
+.toggle-overview {background:var(--background-color);display:block;text-align:center;padding:5px;color:var(--main-color);font-weight:500}
+.toggle-overview:hover {text-decoration:none}
+/* @media (max-width: 560px) {section.overview {display:none}} */
+.thick{border:3px solid var(--secondary-link-border-color);padding:.5em;font-size:1.25rem}
+.thick>b{color:var(--main-color)}
+.thick>p{font-size: 1rem}
+.thick>p>a, .think>p>a:hover {background:var(--link-button-background-color);display:block;text-align:center;padding:5px;color:var(--main-color);font-weight:500;text-decoration:none}
+
+#pub-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
+#pub-container .subtitle{color:var(--main-color);}
+#pub-container .subtitle a {font-size:18px; color: var(--secondary-link-color); font-weight:400}
+#pub-container .subtitle a.activated {color:#333333; font-weight:600}
+#pub-container .subtitle a.activated:focus,
+#pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
+
+#pub-container .subtitle-aux {font-size:1rem}
+#pub-container .subtitle-aux a.activated {color:#333333}
+#pub-container .subtitle-aux a.activated:focus,
+#pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
+#pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+
+#pub-card-container{}
+#pub-card-container>h5{margin-bottom: 5px 0}
+#pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
+#pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
+#pub-card-container .pub-card .col-r{padding-top:10px}
+@media (min-width: 768px) {
+  #pub-card-container .pub-card .col-l{flex:0 0 30%;max-width:30%}
+  #pub-card-container .pub-card .col-r{flex:0 0 70%;max-width:70%}
+}
+#pub-card-container .pub-card img{width:100%;margin:0 auto}
+#pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
+#pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
+#pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
+#pub-card-container .pub-card .authors a{color:#666666}
+#pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
+#pub-card-container .pub-card .conference{color:#333333;font-weight:600}
+#pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:14px}
+#pub-card-container .pub-card .info{margin-bottom:0;}
+#pub-card-container .row{margin:0}
+#pub-card-container .col-l,
+#pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
+
+/* #footer{padding:0 0 1.5em;margin-top:2rem;min-width:240px;background:#fff;font-size:14px;line-height:12px;text-align:left;background:#fef8f3} */
+#footer{padding:0 0 0.5em;margin-top:2rem;min-width:240px;background:#fff;font-size:14px;line-height:12px;text-align:left;}
+#footer{background:url(static/img/loong/loong-bottom-summer-repeat.png); background-size: 15px 15px; background-repeat: repeat;}
+#footer .container{max-width:540px;padding:0 45px;position:relative}
+#footer .row{align-items:center}
+#footer .comic{padding-right:15px;padding-top:15px;}
+#footer .copyright{flex-grow:1;margin:25px auto 5px;text-align:center;display:block;font-size:1rem;line-height:1.4;color:var(--main-color)}
+#footer .stat{width:60px;height:60px;overflow:hidden;margin:0 auto 5px;padding 0;}
+@media (min-width: 420px){ #footer .stat{display:block;width:60px;height:60px;overflow:hidden;margin:5px auto -25px;padding-right:15px;} }
+#footer a{color:#666666}
+#footer a:hover{color:#333333}
+
+.bold{font-weight:600}
+.hide{display:none}
+    </style>
 </head>
 
 <body>
-<h1 style="padding-left: 0.5em">Penghui Yang (NTU)</h1><hr>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
-</td>
-<td id="layout-content">
-    <h1 style="margin-top: 0em">Home</h1><br>
-  <!--  <p>[ <a href="#news">News</a>,
-        <a href="#interest">Research Interests</a>,
-        <a href="#job">Job Experience</a>,
-        <a href="#edu">Education</a> ]</p>-->
-    <table class="imgtable"><tr valign="top">
-        <td align="left">
-            <p><span style="font-size: 130%"><b>Penghui Yang (杨鹏辉)</b></span></p>
+
+<!--img src="static/img/hal-gatewood.jpg" id="background" class="" /-->
+
+<div id="main">
+    <!--canvas id="wave-canvas"></canvas-->
+
+    <div class="main-content">
+        <div id="main-content-container" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-avatar">
+                    <img src="static/img/avatar.jpg" class="avatar" />
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div id="main-info-container">
+                        <!--div class="profile-pendant" style="bottom:-100px;right:-200px;position:absolute"><img src="static/img/rabbit.png" width=200px; height="200px" /></div-->
+                        <div class="col-name">
+                            <h1 class="name"><span>Penghui Yang 杨鹏辉</span></h1>
+                            <p class="email">
+                                Email: phyang [dot] cs [at] gmail [dot] com
+                            </p>
+                            <p class="text">
+                                Penghui Yang is currently a PhD student at College of Computing and Data Science, Nanyang Technological University, supervised by <a href="https://personal.ntu.edu.sg/boan/" target="_blank">Prof. Bo An</a>. 
+                                Before that, he received his B.Sc. degree in Computer Science from Nanjing University of Aeronautics and Astronautics in 2023, advised by <a href="http://parnec.nuaa.edu.cn/huangsj/" target="_blank">Prof. Sheng-Jun Huang</a>.
+                            </p>
+                            <p class="text">
+                                <a href="https://scholar.google.com/citations?user=OuxqnTAAAAAJ" target="_blank">Google Scholar</a> |
+                                <a href="https://dblp.org/pid/245/5714-1.html" target="_blank">DBLP</a> |
+                                <a href="https://www.zhihu.com/people/detached_sextant" target="_blank">知乎</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="content-container">
+        <div class="main-news-container">
+            <h5 class="subtitle">News</h5>
+            <ul class="news-list">
+                <li><p>[Jul 2023] One paper was accepted by ICCV'23. </p></li>
+            </ul>
+
+            <h5 class="subtitle" style="margin-top:30px">Research Highlights</h5>
             <p>
-                <b>Ph.D. Student</b><br>
-                <a href="https://www.ntu.edu.sg/computing/" target="_blank"> College of Computing and Data Science</a> <br>
-                <a href="https://www.ntu.edu.sg/" target="_blank">Nanyang Technological University</a> <br>
+                My long-term research goal is to develop efficient and scalable methods for accelerating and compressing machine learning models.
+                My current focus is on speculative decoding to speed up LLM inference, while my past work involved knowledge distillation for accelerating computer vision models. 
+                I aim to push the boundaries of fast and lightweight AI systems, making AI models more practical and widely accessible.
+                <br><br>
+                If you are interested in collaboration, feel free to get in touch with me.
             </p>
+        </div>
+    </div>
 
-            <p>
-                Scholar Profile: <a href="https://scholar.google.com/citations?user=OuxqnTAAAAAJ" target="_blank">Google Scholar</a> <br>
-                E-mail: phyang.cs [at] gmail [dot] com <br>
-       
-        </td>
-    </tr></table>
-
-<div>
-<h2><hr><a name="biography"></a>Brief Biography</h2>
-I am currently a PhD student at College of Computing and Data Science, Nanyang Technological University, supervised by <a href="https://personal.ntu.edu.sg/boan/" target="_blank">Prof. Bo An</a>. Before that, I received my B.Sc. degree in Computer Science from Nanjing University of Aeronautics and Astronautics in 2023, advised by <a href="http://parnec.nuaa.edu.cn/huangsj/" target="_blank">Prof. Sheng-Jun Huang</a>.
+    <div class="content-container">
+        <div id="pub-container">
+            <h5 class="subtitle">Publications
+            (
+                <!-- <a id="publication-by-selected" href="javascript:;", onClick="publicationBySelected();">show selected</a> / -->
+                <a id="publication-by-date" href="javascript:;", onClick="publicationByDate();">show all by date</a> /
+                <a id="publication-by-topic" href="javascript:;", onClick="publicationByTopic();">show all by topic</a>
+            )
+            </h5>
+            <p class="subtitle-aux"><span class="bold">Topics:</span>
+                <a href="#topic-speculative-decoding" onClick="return publicationByTopicSpecific(this)" data-topic="speculative-decoding">Speculative Decoding</a> /
+                <a href="#topic-knowledge-distillation" onClick="return publicationByTopicSpecific(this)" data-topic="knowledge-distillation">Knowledge Distillation</a> /
+                <a href="#topic-others" onClick="return publicationByTopicSpecific(this)" data-topic="others">Others</a>
+                <br />
+            </p>
+            <div id="pub-card-container" class="activated hide">
+                <div class="pub-card" data-topic="speculative-decoding" data-year="2025" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="projects/long-spec/long-spec.png" style="width: 50%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">LongSpec: Long-Context Speculative Decoding with Efficient Drafting and Verification</h5>
+                                <h6 class="authors">
+                                    <u>Penghui Yang</u><sup>*</sup>,
+                                    <a href="https://scholar.google.com/citations?user=4gFE1iYAAAAJ">Cunxiao Du</a><sup>*</sup>,
+                                    <a href="https://scholar.google.com/citations?user=qLpVG2IAAAAJ">Fengzhuo Zhang</a>,
+                                    <a href="https://charles-haonan-wang.me/">Haonan Wang</a>,
+                                    <a href="https://p2333.github.io/">Tianyu Pang</a>,
+                                    <a href="https://duchao0726.github.io/">Chao Du</a>,
+                                    <a href="https://personal.ntu.edu.sg/boan/">Bo An</a>
+                                </h6>
+                                <p class="info">
+                                    <a target="_blank" class="conference">arXiv 2025</a>
+                                    <a target="_blank" >Paper</a> |
+                                    <a target="_blank" href="https://sail-sg.github.io/LongSpec">Project Page</a> |
+                                    <a target="_blank" href="https://github.com/sail-sg/LongSpec">Code</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-card" data-topic="others" data-year="2025" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="projects/sailor2/sailor2.png" style="width: 40%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Sailor2: Sailing in South-East Asia with Inclusive Multilingual LLMs</h5>
+                                <h6 class="authors">
+                                    Sailor2 Team
+                                </h6>
+                                <p class="info">
+                                    <a target="_blank" class="conference">arXiv 2025</a>
+                                    <a href="https://arxiv.org/abs/2502.12982" target="_blank" >Paper</a> |
+                                    <a target="_blank" href="https://sea-sailor.github.io/blog/sailor2/">Project Page</a> |
+                                    <a target="_blank" href="https://github.com/sail-sg/sailor2">Code</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-card" data-topic="knowledge-distillation" data-year="2024" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="projects/dhkd/dhkd.png" style="width: 80%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Dual-Head Knowledge Distillation: Enhancing Logits Utilization with an Auxiliary Head</h5>
+                                <h6 class="authors">
+                                    <u>Penghui Yang</u>,
+                                    <a href="https://chenchenzong.github.io/">Chen-Chen Zong</a>,
+                                    <a href="http://parnec.nuaa.edu.cn/huangsj/">Sheng-Jun Huang</a>
+                                    <a href="https://lfeng-ntu.github.io/">Lei Feng</a>,
+                                    <a href="https://personal.ntu.edu.sg/boan/">Bo An</a>
+                                </h6>
+                                <p class="info">
+                                    <a target="_blank" class="conference">arXiv 2024</a>
+                                    <a href="https://arxiv.org/abs/2411.08937">Paper</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-card" data-topic="knowledge-distillation" data-year="2023" data-selected="true" id="pub-2023-1">
+                  <div class="row">
+                    <div class="col-l col-xs-12 col-lg-3">
+                      <img src="projects/mlkd/LED.jpg" style="width:55%" />
+                    </div>
+                    <div class="col-r col-xs-12 col-lg-9">
+                      <div class="pub-card-body">
+                        <h5 class="title">Multi-Label Knowledge Distillation</h5>
+                        <h6 class="authors">
+                            <u>Penghui Yang<sup>*</sup></u>,
+                            <a href="https://xiemk.github.io/">Ming-Kun Xie<sup>*</sup></a>,
+                            <a href="https://chenchenzong.github.io/">Chen-Chen Zong</a>,
+                            <a href="https://lfeng-ntu.github.io/">Lei Feng</a>,
+                            <a href="https://niug1984.github.io/">Gang Niu</a>,
+                            <a href="http://www.ms.k.u-tokyo.ac.jp/sugi/index.html/">Masashi Sugiyama</a>,
+                            <a href="http://parnec.nuaa.edu.cn/huangsj/">Sheng-Jun Huang</a>
+                        </h6>
+                        <p class="info">
+                        <a href="https://iccv2023.thecvf.com/" class="conference" target="_blank">ICCV 2023</a>
+                        <a target="_blank" href="https://arxiv.org/abs/2308.06453">Paper</a> |
+                        <a target="_blank" href="https://github.com/penghui-yang/L2D">Code</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <br>
+        <br>
+        <p style="font-size:14px">Website template borrowed from <a target="_blank" href="https://jiayuanm.com/">Jiayuan Mao</a></p>
+        <br>
+    </div>
 </div>
 
-<div>
-        <h2><hr><a name="news"></a>Top News</h2>
-        <ul>
-            <li><p>[Jul 2023] One paper was accepted by ICCV'23. </p></li>
-        </ul>
-</div>
 
-<div>
-    <h2><hr><a name="Education"></a>Education</h2>
-        <ul>
-            <li><p><b>Ph.D.</b> in Computer Science, Nanyang Technological University, Singapore (Aug 2024 - Now)</p></li>
-            Advised by <a href="https://personal.ntu.edu.sg/boan/" target="_blank">Prof. Bo An</a>.
-        </ul>
-        <ul>
-            <li><p><b>B.Sc.</b> in Computer Science, Nanjing University of Aeronautics and Astronautics, China (Sep 2019 - Jun 2023)</p></li>
-            Advised by <a href="http://parnec.nuaa.edu.cn/huangsj/" target="_blank">Prof. Sheng-Jun Huang</a>.
-        </ul>
-</div>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/jquery.color.min.js"></script>
+<!--script type="text/javascript" src="static/js/wave.js"></script-->
+<script type="text/javascript">
 
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
 
-<div>
-   <h2><hr>Publications</h2>
-    <p>(* Corresponding author; &#8224 Equal contribution)</p>
-    <ul>
-        <li><p style = "margin:15px 0">
-            <b>Penghui Yang</b>&#8224, Ming-Kun Xie&#8224, Chen-Chen Zong, Lei Feng, Gang Niu, Masashi Sugiyama, Sheng-Jun Huang*.<br>
-            Multi-Label Knowledge Distillation.<br>
-			<i>Proceedings of the International Conference on Computer Vision (<b>ICCV'23</b>)</i>, pp. 17271-17280, 2023.<br>
-            <a href="https://arxiv.org/abs/2308.06453" target="_blank">[Paper]</a>
-            <a href="https://github.com/penghui-yang/L2D" target="_blank">[Code]</a>
-        </p></li>
-    </ul>
-</div>
+var allPublications = null;
 
-</td>
-</tr>
-</table>
+function playAllVideos() {
+  $("#pub-container video").each(function() {
+    this.play();
+  });
+}
+
+function publicationBySelected() {
+    var a = $("#publication-by-selected")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#pub-container .subtitle a").removeClass("activated");
+    $("#pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        var pub = $(allPublications[pubId]);
+        if (pub.data("selected") == true) {
+            $("#pub-card-container").append(pub);
+        }
+    }
+    playAllVideos();
+}
+
+function publicationByDate() {
+    var a = $("#publication-by-date")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#pub-container .subtitle a").removeClass("activated");
+    $("#pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        if (pubId == 0 || $(allPublications[pubId-1]).data("year") != $(allPublications[pubId]).data("year")) {
+            var year = $(allPublications[pubId]).data("year");
+            $("#pub-card-container").append($("<h5 id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
+        }
+        $("#pub-card-container").append(allPublications[pubId]);
+    }
+    playAllVideos();
+}
+
+function publicationByTopicInner() {
+    var a = $("#publication-by-topic")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+    $("#pub-container .subtitle a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#pub-card-container").html("");
+    for (var topicId in allTopics) {
+        var topic = allTopics[topicId].name;
+        var topicTitle = allTopics[topicId].title;
+        // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
+        $("#pub-card-container").append($("<h5 id='topic-" + topic + "'>" + topicTitle + "</h5>"));
+        for (var pubId = 0; pubId < allPublications.length; pubId++) {
+            var pub = $(allPublications[pubId]);
+            if (pub.data("topic").indexOf(topic) != -1) {
+                $("#pub-card-container").append(pub);
+            }
+        }
+    }
+}
+
+function publicationByTopicSpecificInner(a) {
+    if ($(a).hasClass("activated")) {
+        return false;
+    }
+
+    $("#pub-container .subtitle-aux a").removeClass("activated");
+    $(a).addClass("activated");
+}
+
+function publicationByTopic() {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner($("#pub-container .subtitle-aux a:first"));
+    playAllVideos();
+    return true;
+}
+
+function publicationByTopicSpecific(a) {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner(a);
+
+    var hash = a.hash;
+    $(hash).prop('id', hash.substr(1) + '-noscroll');
+    window.location.hash = hash;
+    $(hash + '-noscroll').prop('id', hash.substr(1));
+
+    if (!$(hash).isInViewport()) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+        });
+    }
+
+    playAllVideos();
+    return false;
+}
+
+function toggleNews(linkElement) {
+    $("#news-more").slideToggle();
+    var e = $("#news-more-button");
+    if (e.data("expanded")) {
+        e.html("Click to hide old news ...");
+        e.data("expanded", false);
+    } else {
+        e.html("Click to show older news ...");
+        e.data("expanded", true);
+    }
+}
+
+$(function() {
+    getRealSize = function(bgImg) {
+        var img = new Image();
+        img.src = bgImg.attr("src");
+        var width = img.width,
+            height = img.height;
+        return {
+            width: width,
+            height: height
+        }
+    };
+
+    getRealWindowSize = function() {
+        var winWidth = null,
+            winHeight = null;
+        if (window.innerWidth) winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
+        if (window.innerHeight) winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth
+        }
+        return {
+            width: winWidth,
+            height: winHeight
+        }
+    };
+
+    fullBg = function() {
+        var bgImg = $("#background");
+        var mainContainer = $("#main");
+        var firstFire = null;
+
+        if (bgImg.length == 0) {
+            return ;
+        }
+
+        function resizeImg() {
+            var realSize = getRealSize(bgImg);
+            var imgWidth = realSize.width;
+            var imgHeight = realSize.height;
+
+            if (imgWidth == 0 || imgHeight == 0) {
+                setTimeout(function() {
+                    resizeImg();
+                }, 200);
+            }
+
+            console.log(realSize);
+            var realWinSize = getRealWindowSize();
+            var winWidth = realWinSize.width;
+            var winHeight = realWinSize.height;
+            var widthRatio = winWidth / imgWidth;
+            var heightRatio = winHeight / imgHeight;
+            console.log(realWinSize);
+            if (widthRatio > heightRatio) {
+                bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({'top':
+                    -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'})
+            } else {
+                bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({'left':
+                    -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'})
+            }
+            // mainContainer.css({
+            //     width: winWidth,
+            //     height: winHeight
+            // });
+        }
+
+        resizeImg();
+        window.onresize = function() {
+            if (firstFire === null) {
+                firstFire = setTimeout(function() {
+                    resizeImg();
+                    firstFire = null
+                }, 100)
+            }
+        }
+    };
+
+    targetColor = $("#main-content-container .name").css("color");
+    animatedLink = function(speed) {
+        $("#main-content-container .col-link li").hover(function() {
+            $(this).find('.icon').animate({
+                color: targetColor,
+                borderColor: targetColor
+            }, speed);
+            $(this).find('.caption').animate({
+                color: targetColor
+            })
+        }, function() {
+            $(this).find('.icon').animate({
+                borderColor: '#cccccc',
+                color: '#cccccc'
+            }, speed);
+            $(this).find('.caption').animate({
+                color: '#cccccc'
+            })
+        })
+    };
+
+    // fullBg();
+    // animatedLink(400);
+
+    allPublications = $("#pub-card-container .pub-card");
+    allTopicsLink = $("#pub-container .subtitle-aux a");
+    allTopics = [];
+    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
+        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
+    }
+
+    $("#publication-by-selected").click();
+    // $("#publication-by-date").click();
+    $("#pub-card-container").removeClass("hide");
+});
+</script>
 </body>
 </html>
