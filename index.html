@@ -183,6 +183,28 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
 #footer a{color:#666666}
 #footer a:hover{color:#333333}
 
+
+/* Research highlights: complementary interactions across three research directions. */
+.research-highlights{margin-top:32px;line-height:1.6}
+.research-highlights .research-title{font-size:1.65rem;line-height:1.25;color:var(--main-color);margin:12px 0 16px;font-weight:600}
+.research-intro{margin-bottom:24px}
+.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.research-direction{min-width:0}
+.research-stage{display:block;text-transform:uppercase;letter-spacing:.09em;font-size:.72rem;color:#63746c;margin-bottom:6px}
+.research-direction h3{font-size:1.05rem;line-height:1.4;font-weight:600;margin:0 0 14px;color:var(--main-color)}
+.interaction-diagram{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-height:184px;padding:16px 8px;background:#f0f7f2;border-radius:6px;margin-bottom:15px}
+.interaction-node{background:#fff;border:1px solid #bdcec3;border-radius:5px;padding:8px 14px;width:190px;max-width:100%;box-sizing:border-box;text-align:center;color:#294b3a;font-weight:500;font-size:.9rem}
+.interaction-flow{display:flex;align-items:center;justify-content:center;gap:14px;font-size:.73rem;line-height:1.4;color:#52685b;text-align:center}
+.interaction-flow span{display:block}
+.interaction-flow .flow-arrow{font-size:1.3rem;line-height:1.1;color:var(--main-color)}
+.research-direction p{font-size:.92rem;margin-bottom:12px}
+.research-links{font-size:.85rem;line-height:1.8}
+.research-links a{display:inline-block;text-decoration:underline;text-underline-offset:3px}
+.research-related{margin:24px 0 0;padding-top:16px;border-top:1px solid #d7e1d9;font-size:.9rem;color:#53645b}
+.pub-card[id]{scroll-margin-top:24px}
+@media(max-width:767px){.research-grid{grid-template-columns:1fr;gap:24px}.research-direction{display:grid;grid-template-columns:minmax(110px,38%) 1fr;column-gap:18px;align-items:start}.research-direction h3{grid-column:1/-1}.interaction-diagram{grid-row:span 2;min-height:168px;margin:0}.interaction-node{min-width:0;width:100%;padding:8px 4px;font-size:.8rem}.interaction-flow{gap:8px;font-size:.68rem}.research-highlights .research-title{font-size:1.45rem}}
+@media(max-width:380px){.research-direction{column-gap:12px}.research-direction p{font-size:.87rem}}
+
 .bold{font-weight:600}
 .hide{display:none}
     </style>
@@ -234,23 +256,48 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
             <h5 class="subtitle">News</h5>
             <ul class="news-list">
                 <li><p>[Apr 2026] One paper was accepted by ACL'26 Oral. </p></li>
-                <li><p>[May 2025] One paper was accepted by KDD'25. </p></li>
+                <li><p>[May 2025] One paper was accepted by KDD'25 Oral. </p></li>
                 <li><p>[Jul 2023] One paper was accepted by ICCV'23. </p></li>
             </ul>
 
-            <h5 class="subtitle" style="margin-top:30px">Research Highlights</h5>
-            <p>
-                My research studies how paired interactions between coordinated entities can make deep learning more efficient. 
-                This principle unifies my work across the pipeline: teacher-student interactions in <b>knowledge distillation</b>, draft-target cooperation in <b>speculative decoding</b>, and paired reasoning modes within a single <b>hybrid reasoning model</b>.
-                Together, these projects aim to make AI models more practical under realistic resource constraints.
-                <br><br>
-                I also explore AI for Science by developing <b>software-in-the-loop</b> frameworks.
-                By integrating physics-based simulators (like CALPHAD and DFT) with AI decision loops, 
-                I aim to build autonomous systems that are both efficient and scientifically reliable, 
-                bridging the gap between neural heuristics and trustworthy discovery.
-                <br><br>
-                If you are interested in collaboration, feel free to get in touch with me.
-            </p>
+            <section class="research-highlights" aria-labelledby="research-heading">
+                <h5 class="subtitle" id="research-heading">Research Highlights</h5>
+                <p class="research-intro">My research focuses on <b>knowledge distillation</b>, <b>speculative decoding</b>, and <b>AI for Science</b> through <b>software-in-the-loop</b> systems. Across these areas, I study how paired interactions between complementary models and computational tools make learning, inference, and scientific discovery more efficient.</p>
+                <div class="research-grid">
+                    <article class="research-direction">
+                        <h3><span class="research-stage">Learning</span>Knowledge Distillation</h3>
+                        <div class="interaction-diagram" role="img" aria-label="A teacher transfers structured supervision to a compact student.">
+                            <div class="interaction-node">Teacher</div>
+                            <div class="interaction-flow"><span>structured supervision<span class="flow-arrow">↓</span></span></div>
+                            <div class="interaction-node">Student</div>
+                        </div>
+                        <p>Design supervision that transfers useful knowledge to compact models, improving capability under deployment constraints.</p>
+                        <div class="research-links"><a href="#pub-2023-1" data-publication-link>MLKD</a> · <a href="#pub-dhkd" data-publication-link>DHKD</a></div>
+                    </article>
+                    <article class="research-direction">
+                        <h3><span class="research-stage">Inference</span>Speculative Decoding</h3>
+                        <div class="interaction-diagram" role="img" aria-label="A draft model proposes tokens and a target model verifies them for lossless acceleration.">
+                            <div class="interaction-node">Draft model</div>
+                            <div class="interaction-flow"><span>propose<span class="flow-arrow">↓</span></span><span>verify<span class="flow-arrow">↑</span></span></div>
+                            <div class="interaction-node">Target model</div>
+                        </div>
+                        <p>Combine inexpensive proposals with target verification to accelerate generation without changing the target distribution.</p>
+                        <div class="research-links"><a href="#pub-longspec" data-publication-link>LongSpec</a></div>
+                    </article>
+                    <article class="research-direction">
+                        <h3><span class="research-stage">Software-in-the-Loop</span>AI for Science</h3>
+                        <div class="interaction-diagram" role="img" aria-label="A neural agent proposes calculations and scientific software returns feedback for revision.">
+                            <div class="interaction-node">Neural agent</div>
+                            <div class="interaction-flow"><span>propose<span class="flow-arrow">↓</span></span><span>feedback<span class="flow-arrow">↑</span></span></div>
+                            <div class="interaction-node">Scientific software</div>
+                        </div>
+                        <p>Close the loop between neural reasoning and physics-based computation to refine designs, recover calculations, and investigate mechanisms.</p>
+                        <div class="research-links"><a href="#pub-automat" data-publication-link>AutoMAT</a> · <a href="#pub-autodft" data-publication-link>AutoDFT</a> · <a href="#pub-xdft" data-publication-link>XDFT</a></div>
+                    </article>
+                </div>
+                <p class="research-related">Related: <a href="#pub-hybrid" data-publication-link>Understanding paired reasoning modes</a> — studying how thinking and non-thinking modes coexist within a single model.</p>
+                <p style="margin-top:16px">If you are interested in collaboration, feel free to get in touch with me.</p>
+            </section>
         </div>
     </div>
 
@@ -271,6 +318,32 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                 <span class="note">*: co-first author, †: corresponding author</span>
             </p>
             <div id="pub-card-container" class="activated hide">
+                <div class="pub-card" data-topic="ai4science" data-year="2026" data-selected="true" id="pub-xdft">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="projects/ai4science/XDFT/xdft.svg" alt="XDFT: experiment-simulation mismatch, executable hypotheses, and evidence-guided refinement" loading="lazy" />
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Discovering Physical Mechanisms from Experiment-Simulation Mismatches</h5>
+                                <h6 class="authors">
+                                    <a target="_blank" href="https://www.ai4mat.net/">Yue Li</a>,
+                                    <u>Penghui Yang</u>,
+                                    <a>Yushan Xiao</a>,
+                                    <a>Zhonghan Zhang</a>,
+                                    <a target="_blank" href="https://jianguo99.github.io/">Jianguo Huang</a>,
+                                    <a target="_blank" href="https://scholar.google.com/citations?user=IBsjUmsAAAAJ">Yuhao Lu</a>,
+                                    <a target="_blank" href="https://dr.ntu.edu.sg/entities/person/Guan-Cuntai">Cuntai Guan</a>,
+                                    <a target="_blank" href="https://personal.ntu.edu.sg/boan/">Bo An</a>,
+                                    <a target="_blank" href="https://bjtang-001.github.io/">Bijun Tang</a>,
+                                    <a target="_blank" href="https://www3.ntu.edu.sg/home/z.liu/index.html">Zheng Liu</a>
+                                </h6>
+                                <p class="info"><span class="conference">arXiv 2026</span> <a target="_blank" href="https://arxiv.org/abs/2604.26703">Paper</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="pub-card" data-topic="others" data-year="2026" data-selected="false">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
@@ -349,7 +422,7 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                         </div>
                     </div>
                 </div>
-                <div class="pub-card" data-topic="ai4science" data-year="2026" data-selected="true">
+                <div class="pub-card" data-topic="ai4science" data-year="2026" data-selected="true" id="pub-autodft">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="projects/ai4science/AutoDFT/autodft.png" style="width: 100%"/>
@@ -360,7 +433,7 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                 <h6 class="authors">
                                     <u>Penghui Yang</u><sup>*</sup>,
                                     <a>Zhonghan Zhang</a><sup>*</sup>,
-                                    <a target="_blank" href="https://scholar.google.com/citations?user=kbTiQPUAAAAJ">Yue Li</a><sup>*</sup>,
+                                    <a target="_blank" href="https://www.ai4mat.net/">Yue Li</a><sup>*</sup>,
                                     <a target="_blank" href="https://rainwangphy.github.io/">Xinrun Wang</a><sup>†</sup>,
                                     <a target="_blank" href="https://ycdeng-ntu.github.io/">Yanchen Deng</a>,
                                     <a target="_blank" href="https://scholar.google.com/citations?user=IBsjUmsAAAAJ">Yuhao Lu</a>,
@@ -372,11 +445,12 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                     <a target="_blank" class="conference">arXiv 2026</a>
                                     <a target="_blank" href="https://arxiv.org/abs/2605.26179">Paper</a>
                                 </p>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pub-card" data-topic="efficientml" data-year="2026" data-selected="true">
+                <div class="pub-card" data-topic="efficientml" data-year="2026" data-selected="true" id="pub-longspec">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="projects/efficientml/long-spec/long-spec.png" style="width: 100%"/>
@@ -395,10 +469,12 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                 </h6>
                                 <p class="info">
                                     <a target="_blank" href="https://2026.aclweb.org/" class="conference">ACL 2026 Oral</a>
-                                    <a target="_blank" href="https://arxiv.org/abs/2502.17421">Paper</a> |
+                                    <a target="_blank" href="https://aclanthology.org/2026.acl-long.83/">Paper</a> |
+                                    <a target="_blank" href="https://arxiv.org/abs/2502.17421">arXiv</a> |
                                     <a target="_blank" href="https://sail-sg.github.io/LongSpec">Project Page</a> |
                                     <a target="_blank" href="https://github.com/sail-sg/LongSpec">Code</a>
                                 </p>
+
                             </div>
                         </div>
                     </div>
@@ -439,7 +515,7 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                         </div>
                     </div>
                 </div>
-                <div class="pub-card" data-topic="efficientml" data-year="2026" data-selected="true">
+                <div class="pub-card" data-topic="efficientml" data-year="2026" data-selected="false" id="pub-hybrid">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="projects/efficientml/hybrid-reasoning/hybrid-reasoning.png" style="width: 100%"/>
@@ -495,7 +571,7 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                         </div>
                     </div>
                 </div>
-                <div class="pub-card" data-topic="ai4science" data-year="2025" data-selected="true">
+                <div class="pub-card" data-topic="ai4science" data-year="2025" data-selected="true" id="pub-automat">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="projects/ai4science/AutoMAT/automat.jpg" style="width: 100%"/>
@@ -523,11 +599,12 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                     <a target="_blank" class="conference">arXiv 2025</a>
                                     <a target="_blank" href="https://arxiv.org/abs/2507.16005">Paper</a>
                                 </p>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pub-card" data-topic="efficientml" data-year="2025" data-selected="true">
+                <div class="pub-card" data-topic="efficientml" data-year="2025" data-selected="true" id="pub-dhkd">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="projects/efficientml/dhkd/dhkd.png" style="width: 100%"/>
@@ -543,11 +620,12 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                     <a target="_blank" href="https://personal.ntu.edu.sg/boan/">Bo An</a>
                                 </h6>
                                 <p class="info">
-                                    <a target="_blank" href="https://kdd2025.kdd.org/" class="conference">KDD 2025</a>
+                                    <a target="_blank" href="https://kdd2025.kdd.org/" class="conference">KDD 2025 Oral</a>
                                     <a target="_blank" href="https://arxiv.org/abs/2411.08937">Paper</a> |
                                     <a target="_blank" href="https://github.com/penghui-yang/DHKD">Code</a> |
                                     <a target="_blank" href="projects/efficientml/dhkd/poster_kdd25_dhkd.pdf">Poster</a>
                                 </p>
+
                             </div>
                         </div>
                     </div>
@@ -663,6 +741,7 @@ section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
                                 <a target="_blank" href="https://github.com/penghui-yang/L2D">Code</a> |
                                 <a target="_blank" href="projects/efficientml/mlkd/poster_iccv23_mlkd.pdf">Poster</a>
                             </p>
+
                         </div>
                     </div>
                 </div>
@@ -929,9 +1008,25 @@ $(function() {
         allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
     }
 
+    function revealPublication(hash) {
+        if (!/^#pub-[a-z0-9-]+$/.test(hash)) return;
+        if (!document.getElementById(hash.slice(1))) publicationByDate();
+        var paper = document.getElementById(hash.slice(1));
+        if (paper) paper.scrollIntoView({block: 'start'});
+    }
+    document.querySelectorAll('[data-publication-link]').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            var hash = link.getAttribute('href');
+            revealPublication(hash);
+            history.replaceState(null, '', hash);
+        });
+    });
+    window.addEventListener('hashchange', function() { revealPublication(window.location.hash); });
     $("#publication-by-selected").click();
     // $("#publication-by-date").click();
     $("#pub-card-container").removeClass("hide");
+    revealPublication(window.location.hash);
 });
 </script>
 </body>
